@@ -1,3 +1,9 @@
 {
-    "private": true
+    "private": true,
+    "scripts": {
+      "start": "lite-server --baseDir=src"
+    },
+    "devDependencies": {
+        "lite-server": "^2.4.0"
+    }
 }
