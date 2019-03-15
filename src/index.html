@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AngularJS Tutorial</title>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-4" href="/">
+          AngularJS Tutorial
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-size-5" href="/">
+            Todos
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="level">
+          <div class="level-item">
+            <h1 class="title">todos</h1>
+          </div>
+        </div>
+        <div class="level is-mobile todo-input">
+          <div class="level-left">
+            <div class="level-item todo-main">
+              <label class="checkbox is-primary">
+                <input type="checkbox" class="toggle-all" />
+                <i class="fas fa-check-double fa-2x"></i>
+              </label>
+            </div>
+          </div>
+          <div class="level-item">
+            <input
+              class="input is-primary is-large"
+              type="text"
+              placeholder="What needs to be done?"
+            />
+          </div>
+        </div>
+        <div class="level todo-main">
+          <div class="content is-large">
+            <ul>
+              <li class="todo-item">
+                <div class="view">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <i class="far fa-circle"></i>
+                    </label>
+                    <span>Einbindung</span>
+                </div>
+                <div class="edit">
+                  <input class="input is-medium" type="text" value="Einbindung" />
+                </div>
+              </li>
+              <li class="todo-item editing">
+                <div class="view">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <i class="far fa-check-circle"></i>
+                    </label>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="edit">
+                  <input class="input is-medium" type="text" value="Bootstrap" />
+                </div>
+              </li>
+              <li class="todo-item completed">
+                <div class="view">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <i class="far fa-check-circle"></i>
+                    </label>
+                    <span>Services</span>
+                </div>
+                <div class="edit">
+                  <input class="input is-medium" type="text" value="Services" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="level is-mobile actionbar">
+          <div class="level-left todo-count">
+            1 item left
+          </div>
+          <div class="level-item">
+              <div class="field is-grouped">
+                  <p class="control">
+                    <a class="button is-small is-active">
+                      All
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-small">
+                      Active
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-small">
+                      Completed
+                    </a>
+                  </p>
+                </div>
+          </div>
+          <div class="level-right">
+            <a href="#" class="is-small">Clear Completed</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

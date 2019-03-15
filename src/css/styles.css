@@ -1,0 +1,67 @@
+
+.todo-input .checkbox {
+  transform: translateX(3rem);
+  z-index: 100;
+}
+
+.todo-input input[type="checkbox"] {
+  display: none;
+}
+
+.todo-input input[type="checkbox"] + * {
+  color: #dadada;
+}
+
+.todo-input input[type="checkbox"]:checked + * {
+  color: #616161;
+}
+
+.todo-input input[type="text"] {
+  padding-left: 4rem;
+}
+
+.todo-main ul {
+  list-style: none;
+}
+
+.todo-item span {
+  margin-left: 1rem;
+}
+
+.todo-item input[type="checkbox"] {
+  display: none;
+}
+
+.todo-item input[type="checkbox"] + * {
+  color: #616161;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #dadada;
+}
+
+.todo-item.completed input[type="checkbox"] + * {
+  color: #dadada;
+}
+
+.todo-item .edit {
+  display: none;
+}
+
+.todo-item.editing .view {
+  display: none;
+}
+
+.todo-item.editing {
+  padding-left: 3rem;
+}
+
+.todo-item.editing .edit {
+  display: inline;
+}
+
+.actionbar {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
