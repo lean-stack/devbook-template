@@ -1,9 +1,11 @@
 {
-    "private": true,
-    "scripts": {
-        "start": "lite-server --baseDir=src"
-    },
-    "devDependencies": {
-        "lite-server": "^2.5.4"
-    }
+  "private": true,
+  "scripts": {
+    "start": "lite-server --baseDir=src",
+    "build": "tailwind build src/css/styles.css -o src/css/styles.dist.css"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "tailwindcss": "^1.1.4"
+  }
 }
