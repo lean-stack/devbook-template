@@ -1,1 +1,3 @@
-# AngularJS Tutorial
+# Project: DevBook Template
+
+> DevBook - A Developer Notebook
